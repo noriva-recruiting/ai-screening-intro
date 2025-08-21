@@ -115,29 +115,18 @@
       </ol>
       <p>You may complete the interview in German or English; NORVO™ will process either language.</p>
       <ul><li>During the interview, your video and audio will be recorded and analyzed in real time by NORVO™.</li></ul>
-      <p style="color: red;">IMPORTANT: Before continuing with the interview, please return to the survey NOW to provide us with some important insights needed for our research purposes.</p>
-      <p>Once you've completed that step, come back here to continue.</p>
-      <button class="btn" onclick="nextPage()">Enter interview session</button>
+      <p style="color: white; font-weight: bold;">
+    IMPORTANT: Before continuing with the interview, please return to the survey NOW to provide us with some important insights needed for our research purposes.
+</p>      
     </div>
 
-    <!-- Page 4 -->
-    <div class="page" id="page4">
-      <h1>Technical Details</h1>
-      <ul>
-        <li>You are now entering a live video session.</li>
-        <li>Please allow this website to access your camera and microphone, so that face calibration by NORVO™ can begin.</li>
-        <li>Please speak directly into the camera to NORVO™.</li>
-      </ul>
-      <p><strong>Tip:</strong> The AI also evaluates your nonverbal presence—stay calm, focused, and authentic.</p>
-      <!-- Button ruft weiter keine Seite mehr auf -->
-      <button class="btn" onclick="startWebcamAndContinue()">Start Screening</button>
-    </div>
+ 
   </div>
 
   <script>
     // ---- State / Logic (angepasst auf 4 Seiten) ----
     let currentPage = 1;
-    const totalPages = 4;
+    const totalPages = 3;
 
     function updateProgressBar() {
       const progress = (currentPage / totalPages) * 100;

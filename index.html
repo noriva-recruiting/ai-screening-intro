@@ -147,6 +147,9 @@
       updateProgressBar();
       updateStatusIndicatorVisibility();
       window.scrollTo({ top: 0, behavior: 'smooth' });
+          if (currentPage === 3) {
+    window.parent.postMessage('showContinueBtn', '*');
+    } 
     }
 
     async function startWebcamAndContinue() {
